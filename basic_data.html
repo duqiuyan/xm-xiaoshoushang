@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>销售商系统</title>
+    
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<!--标准mui.css-->
+		<link rel="stylesheet" href="css/mui.min.css">
+		<!--App自定义的css-->
+		<link rel="stylesheet" href="css/app.css" />
+		<!--<link href="../css/mui.picker.css" rel="stylesheet" />
+		<link href="../css/mui.dtpicker.css" rel="stylesheet" />-->
+		<link rel="stylesheet" href="css/mui.picker.min.css" />
+		<style>
+			html,
+			body,
+			.mui-content {
+				height: 0px;
+				margin: 0px;
+				background-color: #efeff4;
+			}
+			h5.mui-content-padded {
+				margin-left: 3px;
+			}
+			h5.mui-content-padded:first-child {
+				margin-top: 12px !important;
+			}
+			.mui-btn {
+				font-size: 18px;
+				padding: 5px;
+				margin: 0px;
+			}
+			.ui-alert {
+				text-align: center;
+				padding: 20px 10px;
+				font-size: 16px;
+			}
+			* {
+				-webkit-touch-callout: none;
+				-webkit-user-select: none;
+			}
+		</style>
+	</head>
+
+	<body>
+		<header class="headerBar mui-bar mui-bar-nav">
+        <a class="btn-color-w mui-icon mui-icon-arrowleft mui-pull-left" href="javascript:history.go(-1)"></a>
+        <h1 class="mui-title">账户</h1>
+        <a class="btn-color-w mui-icon mui-icon-chatbubble mui-pull-right" href="message center.html"><span class="mui-badge">9</span></a>
+    </header>
+		<div class="mui-content">
+		<div id="tabbar-view-find" class="mui-control-content mui-active">
+            <div id="segmentedControl" class="mui-slider-indicator mui-segmented-control mui-segmented-control-inverted">
+                <a class="mui-control-item mui-active" href="#fxItemView1">基本信息</a>
+                <a class="mui-control-item" href="#fxItemView2">协议信息</a>
+            </div>
+            
+            <!--进行中模块-->
+            <div id="fxItemView1" class="fx-item-view mui-slider-item mui-control-content mui-active">
+                <div id="scroll-fx1" class="fx-scroll-my mui-scroll-wrapper">
+                    <div class="mui-scroll">
+                        <table width="100%"  border="1" cellspacing="0" cellpadding="2" bordercolor="#c8c7cc">
+                        <tr><td>销售商编号：GYS20160727095915003</td></tr>
+                        <tr><td>销售商名称：泉州中良贸易有限公司/td></tr>
+                        <tr><td>合作项目：大米</td></tr>
+                        <tr><td>现有产品：乔府、自有品牌大米</td></tr>
+                        <tr><td>联系人：彭清图</td></tr>
+                        <tr><td>联系电话： 15059797975</td></tr>
+                        <tr><td>社会信用代码： 913505******47106L</td></tr>
+                        <tr><td>通讯地址： 泉州市丰泽区成洲工业区大通厂</td></tr>
+                        <tr><td>供货地址： 泉州市丰泽区成洲工业区大通厂</td></tr>
+                        </table>   
+                    </div>
+                </div>
+            </div>
+
+            <!--待接单模块-->
+            <div id="fxItemView2" class="fx-item-view mui-slider-item mui-control-content">
+                <div id="scroll-fx2" class="fx-scroll-my mui-scroll-wrapper">
+                    <div class="mui-scroll">
+                        <table width="100%"  border="1" cellspacing="0" cellpadding="2" bordercolor="#c8c7cc">
+                        <tr><td>协议编号：FL-2016-CP-0001</td></tr>
+                        <tr><td>销售商名称：泉州中良贸易有限公司</td></tr>
+                        <tr><td>合作项目：大米、食用油</td></tr>
+                        <tr><td>协议签订日期：  2015-08-21</td></tr>
+                        <tr><td>协议开始日期：  2015-08-21</td></tr>
+                        <tr><td>协议截止日期：  2017-08-21</td></tr>
+                        <tr><td>协议状态：协议有效</td></tr>
+                        <tr><td>协议附件：协议1；协议2</td></tr>
+                        </table>  
+                    </div>
+                </div>
+            </div>
+
+        </div>
+		</div>
+		<script src="js/mui.min.js"></script>
+		<!--<script src="js/mui.picker.js"></script>
+		<script src="js/mui.dtpicker.js"></script>-->
+		<script src="js/mui.picker.min.js"></script>
+	</body>
+
+</html>

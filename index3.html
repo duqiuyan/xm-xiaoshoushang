@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>销售商系统</title>
+
+    <!--移动web配置-->
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no" />
+    <!--加载样式-->
+    <link rel="stylesheet" href="css/mui.min.css">
+    <link rel="stylesheet" href="css/icons-extra.css">
+    <link rel="stylesheet" href="css/index.main.css">
+    <!--加载js文件-->
+    <script src="js/mui.min.js"></script>
+
+</head>
+<body>
+
+    <!--顶部标题栏-->
+    <header class="headerBar mui-bar mui-bar-nav">
+        <a class="btn-color-w mui-icon mui-icon-arrowleft mui-pull-left" href="javascript:history.go(-1)"></a>
+        <h1 class="mui-title">我的</h1>
+        <a class="btn-color-w mui-icon mui-icon-chatbubble mui-pull-right" href="message_center.html"><span class="mui-badge">9</span></a>
+    </header>
+
+    <!--底部Bar-->
+    <nav class="footerBar mui-bar mui-bar-tab">
+        <!-- <a class="mui-tab-item" href="#tabbar-view-home"> -->
+        <a class="mui-tab-item" href="#tabbar-view-home">
+            <span class="mui-icon mui-icon-home"></span>
+            <span class="mui-tab-label">首页</span>
+        </a>
+        <a class="mui-tab-item" href="#tabbar-view-find">
+            <span class="mui-icon mui-icon-compose"></span>
+            <span class="mui-tab-label">我的订单</span>
+        </a>
+        <a class="mui-tab-item mui-active" href="#tabbar-view-user">
+            <span class="mui-icon mui-icon-contact"></span>
+            <span class="mui-tab-label">我的</span>
+        </a>
+    </nav>
+    <script type="text/javascript">
+        function sb1(){
+            alert("11");
+            //window.location.href="index1.html"; 
+            window.open("index.html","_self");//"_target"
+        }
+
+        function sb2(){
+            alert("2");
+           // window.location.href="index2.html"; 
+            window.open("index2.html","_self");
+        }
+
+        function sb3(){
+            alert("3");
+            //window.location.href="index3.html"; 
+            window.open("index3.html","_self");
+        }
+    </script>
+
+    <!--内容区域-->
+    <div class="mui-content">
+
+        <!--我的-->
+        <div id="tabbar-view-user" class="mui-control-content mui-active">
+            <div class="user-header-view">
+                <div class="user-topv">
+                    <div class="user-img"><img src="images/main.png" alt=""></div>
+                    <div class="user-longin">张三三</div>
+                    <div class="user-himt">
+                        <i data-index="1" class="mui-icon mui-icon-star-filled"></i>
+                        <i data-index="2" class="mui-icon mui-icon-star-filled"></i>
+                        <i data-index="3" class="mui-icon mui-icon-star-filled"></i>
+                        <i data-index="4" class="mui-icon mui-icon-star-filled"></i>
+                        <i data-index="5" class="mui-icon mui-icon-star"></i>
+                    </div>
+                </div>
+            </div>
+
+            <ul class="mui-table-view mui-table-view-chevron">
+                <li class="mui-table-view-cell mui-media">
+                    <a class="mui-navigate-right" href="basic_data.html">
+                        <img class="mui-media-object mui-pull-left" src="images/female.png">
+                        <div class="mui-media-body">
+                            <h5>基本资料</h5>
+                        </div>
+                    </a>
+                </li>
+                <li class="mui-table-view-cell mui-media">
+                    <a class="mui-navigate-right" href="message.html">
+                        <img class="mui-media-object mui-pull-left" src="images/foursquare.png">
+                        <div class="mui-media-body">
+                            <h5>商品储备信息</h5>
+                        </div>
+                    </a>
+                </li>
+                <li class="mui-table-view-cell mui-media">
+                    <a class="mui-navigate-right" href="password.html">
+                        <img class="mui-media-object mui-pull-left" src="images/pencil.png">
+                        <div class="mui-media-body">
+                            <h5>修改密码</h5>
+                        </div>
+                    </a>
+                </li>
+                <li class="mui-table-view-cell mui-media">
+                    <a class="mui-navigate-right">
+                        <img class="mui-media-object mui-pull-left" src="images/rss.png">
+                        <div class="mui-media-body">
+                            <h5>注销</h5>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <script>
+        mui.init({
+            swipeBack: false
+        });
+
+        //选项卡点击事件  
+        mui('.mui-bar-tab').on('tap', 'a', function(e) {  
+        var targetTab = this.getAttribute('href');  
+            // 判读点击第几个底部按钮
+            if (targetTab == "#tabbar-view-home") {  
+                console.log("aaa");
+                mui.openWindow({url:'index1.html'});
+            }  else if (targetTab == "#tabbar-view-find"){
+                console.log("bbb");
+                mui.openWindow({url:'index2.html'});
+            } else if(targetTab == "#tabbar-view-user"){
+                console.log("ccc");
+                mui.openWindow({url:'index3.html'});
+            }
+        }); 
+        
+        (function($) {
+            $('.mui-scroll-wrapper').scroll({
+                indicators: true, //是否显示滚动条
+                swipeBack: false //启用右滑关闭功能
+            });
+            var html2 = '<ul class="mui-table-view"><li class="mui-table-view-cell">第二个选项卡子项-1</li><li class="mui-table-view-cell">第二个选项卡子项-2</li><li class="mui-table-view-cell">第二个选项卡子项-3</li><li class="mui-table-view-cell">第二个选项卡子项-4</li><li class="mui-table-view-cell">第二个选项卡子项-5</li></ul>';
+            var html3 = '<ul class="mui-table-view"><li class="mui-table-view-cell">第三个选项卡子项-1</li><li class="mui-table-view-cell">第三个选项卡子项-2</li><li class="mui-table-view-cell">第三个选项卡子项-3</li><li class="mui-table-view-cell">第三个选项卡子项-4</li><li class="mui-table-view-cell">第三个选项卡子项-5</li></ul>';
+            var item2 = document.getElementById('item2mobile');
+            var item3 = document.getElementById('item3mobile');
+            var sliderSegmentedControl = document.getElementById('sliderSegmentedControl');
+            $('.mui-input-group').on('change', 'input', function() {
+                if (this.checked) {
+                    sliderSegmentedControl.className = 'mui-slider-indicator mui-segmented-control mui-segmented-control-inverted mui-segmented-control-' + this.value;
+                    //force repaint
+                    sliderProgressBar.setAttribute('style', sliderProgressBar.getAttribute('style'));
+                }
+            });
+
+            /*幻灯片js动画效果*/
+            var slider = mui("#qyslider");
+            slider.slider({
+                interval: 500
+            });
+
+
+        })(mui);
+    </script>
+    
+</body>
+</html>
