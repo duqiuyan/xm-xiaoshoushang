@@ -1674,7 +1674,8 @@ p.changpin img {
 }
 
 .mui-table-view-chevron .mui-table-view-cell {
-    padding-right: 65px
+    padding-right: 65px;
+    border-bottom: 1px solid #c8c7cc;
 }
 
 .mui-table-view-chevron .mui-table-view-cell>a:not(.mui-btn) {
@@ -4338,7 +4339,6 @@ body>.mui-progressbar {
 .mui-ios .mui-table-view-cell {
     -webkit-transform-style: preserve-3d;
     transform-style: preserve-3d;
-    border-bottom: 1px solid #c8c7cc;
     background-color: #fff;
 }
 .mui-media-hf p{
