@@ -1915,6 +1915,7 @@ p.changpin img {
 
 .mui-table-view .mui-media {
     background-color: #fff;
+    border-bottom: 1px solid #c8c7cc;
 }
 
 .mui-table-view .mui-media-large .mui-media-object {
