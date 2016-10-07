@@ -58,7 +58,7 @@ mark {
 }
 
 small {
-    font-size: 14px;
+    font-size: 16px;
 }
 
 sub,sup {
@@ -233,7 +233,12 @@ table a:active,table a:hover {
 }
 
 .mui-media-body a {
+    color: #8f8f94;
+}
+
+a.btn-color-w.mui-icon.mui-icon-phone.mui-pull-right {
     color: #ffa935;
+    font-size: 20px;
 }
 
 .mui-content {
@@ -460,9 +465,17 @@ p.changpin img {
     margin-top: 2px;
 }
 .kitchen-item .kit-item-txt p {
-    font-size: 18px;
+    font-size: 16px;
     color: #000
 }
+
+p.btn-color-w.mui-icon.mui-icon-phone.mui-pull-right {
+    margin-top: -4px;
+    margin-right: 40px;
+    color: #ffa935;
+    font-size: 24px;
+}
+
 .fx-scroll-my.kitchen-item .kit-item-txt
 .mui-row:after,.mui-row:before {
     display: table;
@@ -972,6 +985,14 @@ p.changpin img {
     background-clip: padding-box
 }
 
+button.miu-look {
+    width: 65px;
+    height: 28px;
+    float: right;
+    padding-left: 4px;
+    margin-top: -24px;
+}
+
 .mui-content-padded a {
     float: right;
 }
@@ -1109,6 +1130,15 @@ p.changpin img {
     padding: 15px 0
 }
 
+.mui-content-pl {
+    margin: 20px;
+}
+
+.mui-content-pl a.mui-btn.mui-btn-primary.mui-btn-block {
+    padding: 10px;
+    font-size: 16px;
+}
+
 .mui-btn .mui-badge {
     font-size: 14px;
     margin: -2px -4px -2px 4px;
@@ -1230,7 +1260,7 @@ p.changpin img {
 
 .mui-bar-nav.mui-bar .mui-icon {
     margin-right: -10px;
-    margin-left: -10px;
+    margin-left: -18px;
     padding-right: 10px;
     padding-left: 10px
 }
@@ -4398,4 +4428,37 @@ body>.mui-progressbar {
     width: 100%;
     height: 100%;
     border: 0
+}
+
+.centerflex {
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+}
+
+.top-sch-box {
+    height: 40px;
+    margin: 10px;
+    padding: 10px;
+    font-size: 14px;
+    color: #999999;
+    background-color: #fff;
+    border-radius: 3px;
+}
+
+i.fdj.iconfont.mui-icon.mui-icon-search {
+    color: #979797;
+    font-size: 24px;
+    float: left;
+    margin-top: -24px;
+}
+
+input.sch-txt {
+    width: 100%;
+    padding: 0 10px;
+    border: none;
+    height: 40px;
+    font-size: 16px;
+    background-color: #fff;
+    margin-top: -10px;
 }

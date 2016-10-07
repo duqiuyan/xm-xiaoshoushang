@@ -19,7 +19,7 @@
     <!--顶部标题栏-->
     <header class="headerBar mui-bar mui-bar-nav">
         <a class="btn-color-w mui-icon mui-icon-arrowleft mui-pull-left" href="javascript:history.go(-1)"></a>
-        <h1 class="mui-title">我的</h1>
+        <h1 class="mui-title">订单详情</h1>
         <a class="btn-color-w mui-icon mui-icon-chatbubble mui-pull-right" href="message_center.html"><span class="mui-badge">9</span></a>
     </header>
 
@@ -30,20 +30,21 @@
             <span class="mui-icon mui-icon-home"></span>
             <span class="mui-tab-label">首页</span>
         </a>
-        <a class="mui-tab-item" href="#tabbar-view-find">
+        <a class="mui-tab-item mui-active" href="#tabbar-view-find">
             <span class="mui-icon mui-icon-compose"></span>
             <span class="mui-tab-label">我的订单</span>
         </a>
-        <a class="mui-tab-item mui-active" href="#tabbar-view-user">
+        <a class="mui-tab-item" href="#tabbar-view-user">
             <span class="mui-icon mui-icon-contact"></span>
             <span class="mui-tab-label">我的</span>
         </a>
     </nav>
+
     <script type="text/javascript">
         function sb1(){
             alert("11");
             //window.location.href="index1.html"; 
-            window.open("index.html","_self");//"_target"
+            window.open("index1.html","_self");//"_target"
         }
 
         function sb2(){
@@ -61,58 +62,47 @@
 
     <!--内容区域-->
     <div class="mui-content">
-
-        <!--我的-->
-        <div id="tabbar-view-user" class="mui-control-content mui-active">
-            <div class="user-header-view">
-                <div class="user-topv">
-                    <div class="user-img"><img src="images/main.png" alt=""></div>
-                    <div class="user-longin">张三三</div>
-                    <div class="user-himt">
-                        <i data-index="1" class="mui-icon mui-icon-star-filled"></i>
-                        <i data-index="2" class="mui-icon mui-icon-star-filled"></i>
-                        <i data-index="3" class="mui-icon mui-icon-star-filled"></i>
-                        <i data-index="4" class="mui-icon mui-icon-star-filled"></i>
-                        <i data-index="5" class="mui-icon mui-icon-star"></i>
-                    </div>
-                </div>
-            </div>
-
-            <ul class="mui-table-view mui-table-view-chevron">
-                <li class="mui-table-view-cell mui-media">
-                    <a class="mui-navigate-right" href="basic_data.html">
-                        <img class="mui-media-object mui-pull-left" src="images/female.png">
-                        <div class="mui-media-body">
-                            <h5>基本资料</h5>
+        <div class="mui-scroll">
+            <ul class="mui-table-view">
+                <li class="kitchen-item mui-table-view-cell mui-media">
+                    <a href="javascript:;">
+                        <!--文字信息-->
+                        <div class="title">
+                            <span>物流状态：</span>
+                            <small>(YY201609000799)</small>
+                            <span class="ing">待接单</span>
                         </div>
+                        <div class="kit-item-txt mui-media-body">
+                            <p class='mui-icon'><img src="images/time.png" alt="">归属驿站：明鑫花苑驿站</p>
+                            <p class='mui-icon mui-icon-location'>福建省泉州市刺桐路116号
+                               <button  type="button" class="miu-look">查看路线</button>
+                            </p>
+                            <span class="mui-icon mui-icon-person">周小姐：18750571544<p class="btn-color-w mui-icon mui-icon-phone mui-pull-right"></p></span>
+                        </div>
+                        <div class="title-b">
+                            <p class='changpin'><img src="images/main.png" alt=""></p>
+                            <span class="jieshao">
+                                <p>金穗泰象王(5kg)</p>
+                                <p>数量：2</p>
+                            </span>
+                        </div>
+                        <div class="title-c">
+                            <span class="time">
+                                <p>订单编号：YY201608000899</p>
+                                <p>下单时间：2016-02-06 12:15:00</p>
+                                <p>付款时间：2016-02-06 12:15:00</p>
+                            </span>
+                        </div>
+                        <button type="button" class="mui-btn mui-btn-primary mui-icon mui-icon-phone-filled">
+                           联系公司
+                        </button>
+                        <input type="submit" value="&nbsp&nbsp&nbsp&nbsp接单&nbsp&nbsp&nbsp&nbsp">
                     </a>
                 </li>
-                <li class="mui-table-view-cell mui-media">
-                    <a class="mui-navigate-right" href="message_a.html">
-                        <img class="mui-media-object mui-pull-left" src="images/foursquare.png">
-                        <div class="mui-media-body">
-                            <h5>信息</h5>
-                        </div>
-                    </a>
-                </li>
-                <li class="mui-table-view-cell mui-media">
-                    <a class="mui-navigate-right" href="password.html">
-                        <img class="mui-media-object mui-pull-left" src="images/pencil.png">
-                        <div class="mui-media-body">
-                            <h5>修改密码</h5>
-                        </div>
-                    </a>
-                </li>
-                <li class="mui-table-view-cell mui-media">
-                    <a class="mui-navigate-right">
-                        <img class="mui-media-object mui-pull-left" src="images/rss.png">
-                        <div class="mui-media-body">
-                            <h5>注销</h5>
-                        </div>
-                    </a>
-                </li>
+                <div class="cell-interval"></div>
             </ul>
         </div>
+
     </div>
 
     <script>
@@ -135,7 +125,7 @@
                 mui.openWindow({url:'index3.html'});
             }
         }); 
-        
+
         (function($) {
             $('.mui-scroll-wrapper').scroll({
                 indicators: true, //是否显示滚动条
@@ -160,9 +150,8 @@
                 interval: 500
             });
 
-
         })(mui);
     </script>
-    
+
 </body>
 </html>

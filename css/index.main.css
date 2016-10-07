@@ -11,7 +11,7 @@
 
 /*间隔模块*/
 .cell-interval{background-color: #f0eff5;padding: 5px 0px;width: 100%;text-align: center;}
-
+.cell-in{background-color: #f0eff5;padding: 5px 0px;width: 100%;text-align: center;}
 /*绘制线条*/
 .lc-line-t{border-top: #e0e5e6 solid 1px;}
 .lc-line-b{border-bottom: #e0e5e6 solid 1px;}
@@ -24,12 +24,12 @@
 .mui-control-content {background-color: white;}
 .mui-control-content .mui-loading { margin-top: 150px;}
 
-/*首页-公共课程-配置*/
+/*首页-*/
 .jmlyCell{height: 30px; text-align: left;line-height: 30px;  display: -webkit-flex;flex-wrap: wrap;align-content:flex-start;}
 .jmlyCell .icBolck{width: 4px;height: 20px; margin-top: 5px; margin-right: 5px; background-color: #ffaa33;justify-content: center;align-items: center;display: -webkit-flex;}
 .jmlyCell .icTitle{color: #3e3e3e;}
 
-/*进门礼仪*/
+/**/
 .jmlyPul{width: 100%; background-color:#8a6de9;display: -webkit-flex;}
 .jmlyPul .itemPul{text-align: center; flex: 1;background-color: white;display: -webkit-flex;flex-direction: column;}
 .jmlyPul .itemPul-left{padding-left: 15px; padding-right: 7px;}
@@ -47,12 +47,12 @@
 .pit-topv-bk{width:18px;height: 20px; margin-right: 3px; margin-top: 5px; margin-bottom: 5px;}
 .pit-basv{text-align: left;height: 20px; line-height: 20px;font-size: 0.8rem;color:#939393;}
 
-/*厨房清洁*/
+/**/
 .kitchen-view{background-color: white;}
 .kitchen-item{background-color: white;display: -webkit-flex;flex-direction: column; border: 1px solid #c8c7cc;border-radius: 5px;margin: 10px;}
 .kitchen-item .kit-item-img{  line-height: 82px;  max-width: 126px;  height: 82px;margin-right: 10px;}
 .kitchen-item .kit-item-txt{flex: 1;border-bottom: 1px solid #c8c7cc;width: 100%;}
-.kit-item-txt.mui-pull-left .cut p {font-size: 18px;line-height: 18px;}
+.kit-item-txt.mui-pull-left .cut p {font-size: 16px;line-height: 16px;}
 .kit-item-txt.mui-pull-left img {width: 68px;margin: 10px 10px 10px 0px;float: left;}
 .kitchen-item .kit-item-txt .item-base-txt{ flex: 1;}
 .kitchen-item .kit-item-txt .kit-item-txt-tt{color: #333333;font-size: 1.0rem;}
@@ -63,23 +63,23 @@
 .mui-slider1 .mui-slider-group .mui-slider-item img {width: 100%;}
 .kit-item-txt.mui-media-body img {width: 16px;margin-left: 2px;margin-right: 2px;}
 
-/*发现页面样式*/
+/**/
 .title,.title-a,.title-b,.title-c  {border-bottom: 1px solid #c8c7cc;}
 .title,.title-a,span {font-size: 18px;line-height: 36px;}
 .title-b span {font-size: 14px;line-height: 36px;}
-.title-b span p {font-size: 18px;line-height: 18px;color: #000;}
+.title-b span p {font-size: 16px;line-height: 20px;color: #000;}
 .title-c span p {font-size: 14px;line-height: 18px;}
 .title-b small {font-size: 16px;font-weight: bold;}
 span.jieshao {margin-top: -75px;float: left;margin-left: 68px;}
 span.cut {float: left;}
-span {font-size: 18px;}
+span {font-size: 16px;}
 span.ing {float: right;color: #ffa935;font-size: 14px;line-height: 38px;font-weight: normal;}
 span.ing input {float: right;margin-top: 13px;margin-left: 2px;}
 span.mui-icon.mui-icon-refresh p {margin-left: 16px;}
 .mui-ellipsis-3 {display: -webkit-box;overflow: hidden;white-space: normal!important;text-overflow: ellipsis;word-wrap: break-word;-webkit-line-clamp: 3;-webkit-box-orient: vertical;}
 .fx-item-tt{color: #333333;font-size: 1.2rem;}
 .fx-item-ds{color: #939393;font-size: 0.8rem;margin-top: 5px;}
-.fx-item-view{background-color: white;height: 530px;height:auto;}
+.fx-item-view{background-color: white;height:auto;}
 .fx-scroll-my{background-color: white;}
 
 /*我的页面*/

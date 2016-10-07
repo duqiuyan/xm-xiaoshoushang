@@ -46,31 +46,53 @@
 	<body>
 		<header class="headerBar mui-bar mui-bar-nav">
         <a class="btn-color-w mui-icon mui-icon-arrowleft mui-pull-left" href="javascript:history.go(-1)"></a>
-        <h1 class="mui-title">账户</h1>
+        <h1 class="mui-title">信息</h1>
         <a class="btn-color-w mui-icon mui-icon-chatbubble mui-pull-right" href="message_center.html"><span class="mui-badge">9</span></a>
     </header>
 		<div class="mui-content">
 		<div id="tabbar-view-find" class="mui-control-content mui-active">
             <div id="segmentedControl" class="mui-slider-indicator mui-segmented-control mui-segmented-control-inverted">
-                <a class="mui-control-item mui-active" href="#fxItemView1">工资结算单</a>
-                <a class="mui-control-item" href="#fxItemView2">结算汇总</a>
+                <a class="mui-control-item mui-active" href="#fxItemView1">驿站信息</a>
+                <a class="mui-control-item" href="#fxItemView2">商品储备信息</a>
             </div>
-            <div class="mui-content-padded">
-				<button id='demo2' data-options='{"type":"date","beginYear":2014,"endYear":2016}' class="btn mui-btn mui-btn-block">选择日期 ...</button>
-			</div>
+            <div class="top-sch-box flex-col">
+                <div class="centerflex">
+                    <i class="fdj iconfont mui-icon mui-icon-search"></i>
+                    <input type="text" name="" id="" value="" class="sch-txt" placeholder="搜索">
+                </div>
+            </div>
             
             <!--进行中模块-->
             <div id="fxItemView1" class="fx-item-view mui-slider-item mui-control-content mui-active">
                 <div id="scroll-fx1" class="fx-scroll-my mui-scroll-wrapper">
                     <div class="mui-scroll">
-                        <table width="100%"  border="1" cellspacing="0" cellpadding="2" bordercolor="#c8c7cc">
-                        <tr align=center><td>联盟商编号</td><td>FJQZ00001</td></tr>
-                        <tr align=center><td>联盟商名称</td><td>兄弟家电维修部</td></tr>
-                        <tr align=center><td>上门金额（元）</td><td>5.00</td></tr>
-                        <tr align=center><td>工时金额（元）</td><td>150.00</td></tr>
-                        <tr align=center><td>合计金额（元）</td><td>150.00</td></tr>
-                        </table>   
-                    </div>
+                <ul class="mui-table-view">
+                    <li class="mui-table-view-cell mui-media">
+                            <img class="mui-media-object mui-pull-left" src="images/main.png">
+                            <div class="mui-media-body">
+                                        明鑫花苑驿站
+                            <a class="btn-color-w mui-icon mui-icon-arrowright mui-pull-right" href="post_details.html"></a>
+                                <p class="mui-ellipsis"> 地址：泉州市丰泽区成洲工业区大通厂</p>
+                            </div>
+                    </li>
+                    <li class="mui-table-view-cell mui-media">
+                            <img class="mui-media-object mui-pull-left" src="images/main.png">
+                            <div class="mui-media-body">
+                                        明鑫花苑驿站
+                            <a class="btn-color-w mui-icon mui-icon-arrowright mui-pull-right" href="post_details.html"></a>
+                                <p class="mui-ellipsis"> 地址：泉州市丰泽区成洲工业区大通厂</p>
+                            </div>
+                    </li>
+                    <li class="mui-table-view-cell mui-media">
+                            <img class="mui-media-object mui-pull-left" src="images/main.png">
+                            <div class="mui-media-body">
+                                        明鑫花苑驿站
+                            <a class="btn-color-w mui-icon mui-icon-arrowright mui-pull-right" href="post_details.html"></a>
+                                <p class="mui-ellipsis"> 地址：泉州市丰泽区成洲工业区大通厂</p>
+                            </div>
+                    </li>
+                </ul>
+            </div>
                 </div>
             </div>
 
@@ -79,12 +101,12 @@
                 <div id="scroll-fx2" class="fx-scroll-my mui-scroll-wrapper">
                     <div class="mui-scroll">
                         <table width="100%"  border="1" cellspacing="0" cellpadding="2" bordercolor="#c8c7cc">
-                        <tr align=center><td>项目明细</td><td>上门金额</td><td>工时金额</td><td>评价得分</td><td>结算金额</td><td>操作</td></tr>
-                        <tr align=center><td>加空调液</td><td>45.00</td><td>677.50</td><td>95.01</td><td>607.00</td><td><a class="look" href="account_aa.html">查看明细</a></td></tr>
-                        <tr align=center><td>空调清洗</td><td>225.00</td><td>45.00</td><td>45.00</td><td>607.00</td><td><a class="look" href="account_aa.html">查看明细</a></td></tr>
-                        <tr align=center><td>空调维修检测</td><td>15.00</td><td>45.00</td><td>45.00</td><td>607.00</td><td><a class="look" href="account_aa.html">查看明细</a></td></tr>
-                        <tr align=center><td>空调移机</td><td>15.00</td><td>45.00</td><td>45.00</td><td>607.00</td><td><a class="look" href="account_aa.html">查看明细</a></td></tr>
-                        </table>  
+                        <tr align=center><td>产品名称</td><td>归属驿站</td><td>需求量</td><td>操作</td></tr>
+                        <tr align=center><td>金穗泰象王大米5斤装</td><td>东海滨城</td><td>-5</td><td><a class="look" href="messageaa.html">查看明细</a></td></tr>
+                        <tr align=center><td>金穗泰象王大米5斤装</td><td>裕景弯</td><td>10</td><td><a class="look" href="messageaa.html">查看明细</a></td></tr>
+                        <tr align=center><td>金穗泰象王大米5斤装</td><td>裕景弯</td><td>8</td><td><a class="look" href="messageaa.html">查看明细</a></td></tr>
+                        <tr align=center><td>金穗泰象王大米5斤装</td><td>东海滨城</td><td>10</td><td><a class="look" href="messageaa.html">查看明细</a></td></tr>
+                        </table>   
                     </div>
                 </div>
             </div>

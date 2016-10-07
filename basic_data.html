@@ -47,7 +47,7 @@
 		<header class="headerBar mui-bar mui-bar-nav">
         <a class="btn-color-w mui-icon mui-icon-arrowleft mui-pull-left" href="javascript:history.go(-1)"></a>
         <h1 class="mui-title">账户</h1>
-        <a class="btn-color-w mui-icon mui-icon-chatbubble mui-pull-right" href="message center.html"><span class="mui-badge">9</span></a>
+        <a class="btn-color-w mui-icon mui-icon-chatbubble mui-pull-right" href="message_center.html"><span class="mui-badge">9</span></a>
     </header>
 		<div class="mui-content">
 		<div id="tabbar-view-find" class="mui-control-content mui-active">
@@ -99,6 +99,53 @@
 		<!--<script src="js/mui.picker.js"></script>
 		<script src="js/mui.dtpicker.js"></script>-->
 		<script src="js/mui.picker.min.js"></script>
+		<script>
+        mui.init({
+            swipeBack: false
+        });
+
+        //选项卡点击事件  
+        mui('.mui-bar-tab').on('tap', 'a', function(e) {  
+        var targetTab = this.getAttribute('href');  
+            // 判读点击第几个底部按钮
+            if (targetTab == "#tabbar-view-home") {  
+                console.log("aaa");
+                mui.openWindow({url:'index1.html'});
+            }  else if (targetTab == "#tabbar-view-find"){
+                console.log("bbb");
+                mui.openWindow({url:'index2.html'});
+            } else if(targetTab == "#tabbar-view-user"){
+                console.log("ccc");
+                mui.openWindow({url:'index3.html'});
+            }
+        }); 
+
+        (function($) {
+            $('.mui-scroll-wrapper').scroll({
+                indicators: true, //是否显示滚动条
+                swipeBack: false //启用右滑关闭功能
+            });
+            var html2 = '<ul class="mui-table-view"><li class="mui-table-view-cell">第二个选项卡子项-1</li><li class="mui-table-view-cell">第二个选项卡子项-2</li><li class="mui-table-view-cell">第二个选项卡子项-3</li><li class="mui-table-view-cell">第二个选项卡子项-4</li><li class="mui-table-view-cell">第二个选项卡子项-5</li></ul>';
+            var html3 = '<ul class="mui-table-view"><li class="mui-table-view-cell">第三个选项卡子项-1</li><li class="mui-table-view-cell">第三个选项卡子项-2</li><li class="mui-table-view-cell">第三个选项卡子项-3</li><li class="mui-table-view-cell">第三个选项卡子项-4</li><li class="mui-table-view-cell">第三个选项卡子项-5</li></ul>';
+            var item2 = document.getElementById('item2mobile');
+            var item3 = document.getElementById('item3mobile');
+            var sliderSegmentedControl = document.getElementById('sliderSegmentedControl');
+            $('.mui-input-group').on('change', 'input', function() {
+                if (this.checked) {
+                    sliderSegmentedControl.className = 'mui-slider-indicator mui-segmented-control mui-segmented-control-inverted mui-segmented-control-' + this.value;
+                    //force repaint
+                    sliderProgressBar.setAttribute('style', sliderProgressBar.getAttribute('style'));
+                }
+            });
+
+            /*幻灯片js动画效果*/
+            var slider = mui("#qyslider");
+            slider.slider({
+                interval: 500
+            });
+
+        })(mui);
+    </script>
 	</body>
 
 </html>
