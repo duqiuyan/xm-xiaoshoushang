@@ -996,6 +996,12 @@ button.miu-look {
 .mui-content-padded a {
     float: right;
 }
+
+a.cel {
+    margin-top: 70px;
+    width: 100%;
+}
+
 .mui-btn.mui-active:enabled,.mui-btn:enabled:active,button.mui-active:enabled,button:enabled:active,input[type=button].mui-active:enabled,input[type=button]:enabled:active,input[type=reset].mui-active:enabled,input[type=reset]:enabled:active,input[type=submit].mui-active:enabled,input[type=submit]:enabled:active {
     color: #fff;
     background-color: #ffa935
@@ -1126,7 +1132,7 @@ button.miu-look {
     font-size: 18px;
     display: block;
     width: 100%;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
     padding: 15px 0
 }
 
