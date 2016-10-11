@@ -81,7 +81,6 @@ img {
     border: 0
 }
 
-
 .pl img {
     width: 50px;
     float: right;
@@ -89,20 +88,24 @@ img {
     margin-right:10px;
     position: relative;
 }
+
 .xz-icon img {
     width: 20px;
     
 }
+
 .xz-icon{
     float: right;
     padding-top: 13px;
     padding-left: 10px;
     
 }
+
 .mui-grid-view.mui-grid-9 img {
     width: 40px;
     border: 0
 }
+
 svg:not(:root) {
     overflow: hidden
 }
@@ -239,6 +242,7 @@ table a:active,table a:hover {
 a.btn-color-w.mui-icon.mui-icon-phone.mui-pull-right {
     color: #ffa935;
     font-size: 20px;
+    margin-right: 30px;
 }
 
 .mui-content {
@@ -459,18 +463,37 @@ p {
     margin-bottom: 10px;
     color: #8f8f94
 }
+
+.gongzi p {
+    color: #000;
+    font-size: 16px;
+    margin: 20px 0px;
+
+}
+
+.gongzi {
+    float: right;
+    margin-right: 20px;
+}
+
+a.look {
+    color: #ffa935;
+}
+
 p.changpin img {
     width: 58px;
     height: 58px;
     margin-top: 2px;
 }
+
 .kitchen-item .kit-item-txt p {
     font-size: 16px;
-    color: #000
+    color: #000;
+    line-height: 18px;
 }
 
 p.btn-color-w.mui-icon.mui-icon-phone.mui-pull-right {
-    margin-top: -4px;
+    margin-top: 0px;
     margin-right: 40px;
     color: #ffa935;
     font-size: 24px;
@@ -3954,10 +3977,10 @@ body>.mui-progressbar {
 
 .mui-icon {
     font-family: Muiicons;
-    font-size: 18px;
-    font-weight: 400;
-    font-style: normal;
+    font-size: 16px;
     line-height: 1;
+    font-weight: normal;
+    font-style: normal;
     text-decoration: none;
     -webkit-font-smoothing: antialiased
 }
@@ -4443,7 +4466,7 @@ body>.mui-progressbar {
 }
 
 .top-sch-box {
-    height: 40px;
+    height: 34px;
     margin: 10px;
     padding: 10px;
     font-size: 14px;
@@ -4459,11 +4482,15 @@ i.fdj.iconfont.mui-icon.mui-icon-search {
     margin-top: -24px;
 }
 
+i.fdj.iconfont.mui-icon.mui-icon-search:active {
+    color: #ffa935;
+}
+
 input.sch-txt {
     width: 100%;
     padding: 0 10px;
     border: none;
-    height: 40px;
+    height: 34px;
     font-size: 16px;
     background-color: #fff;
     margin-top: -10px;

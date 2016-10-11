@@ -61,7 +61,8 @@
 .ibt-bsv{text-align: left;color: #939393;font-size: 14px;}
 .ibt-bsv .ibt-bsv-bk{width:18px;height: 20px; margin-right: 3px;}
 .mui-slider1 .mui-slider-group .mui-slider-item img {width: 100%;}
-.kit-item-txt.mui-media-body img {width: 16px;margin-left: 2px;margin-right: 2px;}
+.kit-item-txt.mui-media-body img {width: 16px;}
+span.mui-icon p {margin-left: 16px;}
 
 /**/
 .title,.title-a,.title-b,.title-c  {border-bottom: 1px solid #c8c7cc;}
