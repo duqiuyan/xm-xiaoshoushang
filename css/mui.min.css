@@ -240,7 +240,6 @@ table a:active,table a:hover {
 }
 
 a.btn-color-w.mui-icon.mui-icon-phone.mui-pull-right {
-    color: #ffa935;
     font-size: 20px;
     margin-right: 30px;
 }
@@ -4034,7 +4033,8 @@ a.mui-icon.mui-icon-phone.mui-pull-right {
 }
 
 .mui-icon-phone:before {
-    content: '\e200'
+    content: '\e200';
+    color: #ffa935;
 }
 
 .mui-icon-email:before {
