@@ -3987,6 +3987,12 @@ body>.mui-progressbar {
     -webkit-font-smoothing: antialiased
 }
 
+a.mui-icon.mui-icon-phone.mui-pull-right {
+    float: initial;
+    width: 20px;
+    padding-left: 10px;
+}
+
 .icons.mui-inline i{
    color: #fff
 }
