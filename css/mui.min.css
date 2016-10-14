@@ -1060,10 +1060,11 @@ a.cel {
 
 .mui-btn-warning,.mui-btn-yellow {
     color: #fff;
-    border: 1px solid #007aff;
-    background-color: #007aff;
+    border: 1px solid #ffa935;
+    background-color: #ffa935;
     display: block;
-    padding: 5px 10px;
+    margin: 15px auto;
+    padding: 0px 10px;
 }
 
 .mui-btn-warning.mui-active:enabled,.mui-btn-warning:enabled:active,.mui-btn-yellow.mui-active:enabled,.mui-btn-yellow:enabled:active {
@@ -1121,7 +1122,8 @@ a.cel {
 }
 
 .mui-btn-outlined.mui-btn-warning,.mui-btn-outlined.mui-btn-yellow {
-    color: #007aff
+    color: #007aff;
+    border: 1px solid #007aff;
 }
 
 .mui-btn-outlined.mui-btn-danger,.mui-btn-outlined.mui-btn-negative,.mui-btn-outlined.mui-btn-red {
@@ -1994,7 +1996,7 @@ a.cel {
 
 
 .mui-media-body p {
-    font-size: 14px;
+    font-size: 15px;
 }
 
 .mui-ellipsis {
@@ -3790,7 +3792,7 @@ body>.mui-progressbar {
 }
 
 .mui-navigate-right:after,.mui-push-right:after {
-    right: 15px;
+    right: 5px;
     content: '\e583'
 }
 
