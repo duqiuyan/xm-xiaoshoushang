@@ -52,48 +52,56 @@
 		<div class="mui-content">
 		<div id="tabbar-view-find" class="mui-control-content mui-active">
             <div id="segmentedControl" class="mui-slider-indicator mui-segmented-control mui-segmented-control-inverted">
-                <a class="mui-control-item mui-active" href="#fxItemView1">工资结算单</a>
+                <a class="mui-control-item mui-active" href="#fxItemView1">结算单</a>
                 <a class="mui-control-item" href="#fxItemView2">结算汇总</a>
+                <a class="mui-control-item" href="#fxItemView3">销售统计</a>
             </div>
             <div class="mui-content-padded">
 				<button id='demo2' data-options='{"type":"date","beginYear":2014,"endYear":2016}' class="btn mui-btn mui-btn-block">选择日期 ...</button>
 			</div>
             
-            <!--进行中模块-->
             <div id="fxItemView1" class="fx-item-view mui-slider-item mui-control-content mui-active">
                 <div id="scroll-fx1" class="fx-scroll-my mui-scroll-wrapper">
                     <div class="mui-scroll">
                         <table width="100%"  border="1" cellspacing="0" cellpadding="2" bordercolor="#c8c7cc">
-                        <tr align=center><td>联盟商编号</td><td>FJQZ00001</td></tr>
-                        <tr align=center><td>联盟商名称</td><td>兄弟家电维修部</td></tr>
-                        <tr align=center><td>上门金额（元）</td><td>5.00</td></tr>
-                        <tr align=center><td>工时金额（元）</td><td>150.00</td></tr>
-                        <tr align=center><td>合计金额（元）</td><td>150.00</td></tr>
-                        </table>   
+                        <tr align=center><td>结算产品</td><td>结算方式</td><td>结算金额</td><td>统计时间</td><td>操作</td></tr>
+                        <tr align=center><td>米</td><td>日结</td><td>607.00</td><td>08-30</td><td><a class="look" href="account_cc.html">结算单</a></td></tr>
+                        <tr align=center><td>大米</td><td>周结</td><td>607.00</td><td>08-30</td><td><a class="look" href="account_cc.html">结算单</a></td></tr>
+                        <tr align=center><td>油</td><td>月结</td><td>607.00</td><td>08-30</td><td><a class="look" href="account_cc.html">结算单</a></td></tr>
+                        <tr align=center><td>米</td><td>季度结</td><td>607.00</td><td>08-30</td><td><a class="look" href="account_cc.html">结算单</a></td></tr>
+                        </table>  
                     </div>
-                    <div class="gongzi">
-                    	<p>实发工资：<a class="look" href="">155.00</a></p>
-                    </div>
-                    <div class="mui-content-padded">
-				       <a type="button" class="mui-btn mui-btn-primary mui-btn-block">确认</a>
-			        </div>
+                    <p class="jiesuan">请点击对应结算产品的结算单进行结算金额确认!</p>
                 </div>
             </div>
 
-            <!--待接单模块-->
             <div id="fxItemView2" class="fx-item-view mui-slider-item mui-control-content">
                 <div id="scroll-fx2" class="fx-scroll-my mui-scroll-wrapper">
                     <div class="mui-scroll">
                         <table width="100%"  border="1" cellspacing="0" cellpadding="2" bordercolor="#c8c7cc">
-                        <tr align=center><td>项目明细</td><td>上门金额</td><td>工时金额</td><td>评价得分</td><td>结算金额</td><td>操作</td></tr>
-                        <tr align=center><td>加空调液</td><td>45.00</td><td>677.50</td><td>95.01</td><td>607.00</td><td><a class="look" href="account_aa.html">查看明细</a></td></tr>
-                        <tr align=center><td>空调清洗</td><td>225.00</td><td>45.00</td><td>45.00</td><td>607.00</td><td><a class="look" href="account_aa.html">查看明细</a></td></tr>
-                        <tr align=center><td>空调维修检测</td><td>15.00</td><td>45.00</td><td>45.00</td><td>607.00</td><td><a class="look" href="account_aa.html">查看明细</a></td></tr>
-                        <tr align=center><td>空调移机</td><td>15.00</td><td>45.00</td><td>45.00</td><td>607.00</td><td><a class="look" href="account_aa.html">查看明细</a></td></tr>
+                        <tr align=center><td>结算产品</td><td>结算方式</td><td>零售价统计</td><td>配送费统计</td><td>结算金额</td><td>统计时间</td><td>操作</td></tr>
+                        <tr align=center><td>米</td><td>日结</td><td>607.00</td><td>607.00</td><td>607.00</td><td>08-30</td><td><a class="look" href="account_aa.html">结算明细</a></td></tr>
+                        <tr align=center><td>大米</td><td>周结</td><td>607.00</td><td>607.00</td><td>607.00</td><td>08-30</td><td><a class="look" href="account_aa.html">结算明细</a></td></tr>
+                        <tr align=center><td>油</td><td>月结</td><td>607.00</td><td>607.00</td><td>607.00</td><td>08-30</td><td><a class="look" href="account_aa.html">结算明细</a></td></tr>
+                        <tr align=center><td>米</td><td>季度结</td><td>607.00</td><td>607.00</td><td>607.00</td><td>08-30</td><td><a class="look" href="account_aa.html">结算明细</a></td></tr>
                         </table>  
                     </div>
-                    <div class="gongzi">
-                    	<p>合计金额：<a class="look" href="">11220.00</a></p>
+                    <p class="jiesuan">请点击对应结算产品的结算单进行结算金额确认!</p>
+                </div>
+            </div>
+
+            <div id="fxItemView3" class="fx-item-view mui-slider-item mui-control-content">
+                <div id="scroll-fx3" class="fx-scroll-my mui-scroll-wrapper">
+                    <div class="mui-scroll">
+                        <table width="100%"  border="1" cellspacing="0" cellpadding="2" bordercolor="#c8c7cc">
+                        <tr align=center><td>产品名称</td><td>产品销量</td><td>零售价合计</td><td>合计配送费</td><td>操作</td></tr>
+                        <tr align=center><td>德大米</td><td>11</td><td>677.50</td><td>55.00</td><td><a class="look" href="account_bb.html">查看详情</a></td></tr>
+                        <tr align=center><td>德大米</td><td>11</td><td>677.50</td><td>55.00</td><td><a class="look" href="account_bb.html">查看详情</a></td></tr>
+                        <tr align=center><td>金龙鱼</td><td>11</td><td>10.00</td><td>10.00</td><td><a class="look" href="account_bb.html">查看详情</a></td></tr>
+                        <tr align=center><td>德大米</td><td>11</td><td>677.50</td><td>55.00</td><td><a class="look" href="account_bb.html">查看详情</a></td></tr>
+                        <tr align=center><td>金龙鱼</td><td>11</td><td>10.00</td><td>10.00</td><td><a class="look" href="account_bb.html">查看详情</a></td></tr>
+                        <tr align=center><td>德大米</td><td>11</td><td>677.50</td><td>55.00</td><td><a class="look" href="account_bb.html">查看详情</a></td></tr>
+                        </table>  
                     </div>
                 </div>
             </div>

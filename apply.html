@@ -3,15 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <title>销售商系统</title>
-    
-		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
-		<!--标准mui.css-->
-		<link rel="stylesheet" href="css/mui.min.css">
-		<!--App自定义的css-->
-		<link rel="stylesheet" href="css/app.css" />
-		<!--<link href="../css/mui.picker.css" rel="stylesheet" />
-		<link href="../css/mui.dtpicker.css" rel="stylesheet" />-->
-		<link rel="stylesheet" href="css/mui.picker.min.css" />
+
+    <!--移动web配置-->
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no" />
+    <!--加载样式-->
+    <link rel="stylesheet" href="css/mui.min.css">
+    <link rel="stylesheet" href="css/icons-extra.css">
+    <link rel="stylesheet" href="css/index.main.css">
+    <!--加载js文件-->
+    <script src="js/mui.min.js"></script>
 		<style>
 			html,
 			body,
@@ -46,25 +46,26 @@
 	<body>
 		<header class="headerBar mui-bar mui-bar-nav">
         <a class="btn-color-w mui-icon mui-icon-arrowleft mui-pull-left" href="javascript:history.go(-1)"></a>
-        <h1 class="mui-title">结算明细</h1>
+        <h1 class="mui-title">合作申请详情</h1>
         <a class="btn-color-w mui-icon mui-icon-chatbubble mui-pull-right" href="message_center.html"><span class="mui-badge">9</span></a>
     </header>
 		<div class="mui-content">
-            <div class="mui-content-padded">
-				<button id='demo2' data-options='{"type":"date","beginYear":2014,"endYear":2016}' class="btn mui-btn mui-btn-block">选择日期 ...</button>
-			</div>
             <div class="mui-scroll">
                 <table width="100%"  border="1" cellspacing="0" cellpadding="2" bordercolor="#c8c7cc">
-                    <tr align=center><td>订单编号</td><td>项目名称</td><td>上门金额</td><td>工时金额</td><td>评价得分</td><td>结算金额</td></tr>
-                    <tr align=center><td>YY201202320</td><td>空调加液</td><td>5.00</td><td>230</td><td>65.21</td><td>220</td></tr>
-                    <tr align=center><td>YY201202320</td><td>空调加液</td><td>5.00</td><td>45.00</td><td>100</td><td>220</td></tr>
-                    <tr align=center><td>YY201202320</td><td>空调加液</td><td>5.00</td><td>45.00</td><td>90.21</td><td>220</td></tr>
-                    <tr align=center><td>YY201202320</td><td>空调加液</td><td>5.00</td><td>45.00</td><td>66.30</td><td>220</td></tr>
-                </table>  
-            </div>
-            <div class="gongzi">
-                <span>统计数量:<a class="look" href="">1 </a></span>
-                <span>结算价合计:<a class="look" href="">54.00</a></span>
+                    <tr align=center><td>申请编号</td><td>JM20161007113122006<a class="ing">待审核</a></td></tr>
+                    <tr align=center><td>申请人</td><td>王一</td></tr>
+                    <tr align=center><td>合作产品</td><td>大米、食用油</td></tr>
+                    <tr align=center><td>联系人</td><td>王一</td></tr>
+                    <tr align=center><td>联系方式</td><td>18850221079</td></tr>
+                    <tr align=center><td>通讯地址</td><td>泉州丰泽区</td></tr>
+                    <tr align=center><td>微信</td><td>18850221079</td></tr>
+                    <tr align=center><td>QQ</td><td>18850221079</td></tr>
+                    <tr align=center><td>备注</td><td>12第三方斯蒂芬斯</td></tr>
+                    <tr align=center><td>申请时间</td><td>2016-10-10 12：25：52</td></tr>
+                </table>
+                <div class="mui-content-padded">
+				<a type="button" class="mui-btn mui-btn-primary mui-btn-block" href="application_to_join.html">申请</a>
+			</div> 
             </div>
 		</div>
 		<script src="js/mui.min.js"></script>
