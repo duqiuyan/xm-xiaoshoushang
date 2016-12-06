@@ -233,12 +233,11 @@ body {
 
 a {
     text-decoration: none;
-    color: #fff
 }
 
-a:active {
+/*a:active {
     color: #fff
-}
+}*/
 
 table a {
     color: #ffa935;
@@ -1090,7 +1089,9 @@ a.cel {
     background-color: #ffa935;
     display: block;
     margin: 15px auto;
-    padding: 0px 10px;
+    padding: 4px 34px;
+    font-size: 16px;
+    margin-bottom: 20px;
 }
 
 .mui-btn-warning.mui-active:enabled,.mui-btn-warning:enabled:active,.mui-btn-yellow.mui-active:enabled,.mui-btn-yellow:enabled:active {
@@ -1319,7 +1320,8 @@ a.cel {
     margin-right: -10px;
     margin-left: -18px;
     padding-right: 10px;
-    padding-left: 10px
+    padding-left: 10px;
+    color: #fff;
 }
 
 .mui-title {
@@ -2313,7 +2315,7 @@ input:focus,select:focus,textarea:focus {
     -webkit-user-modify: read-write-plaintext-only
 }
 
-input[type=color],input[type=date],input[type=datetime-local],input[type=datetime],input[type=email],input[type=month],input[type=number],input[type=password],input[type=search],input[type=tel],input[type=text],input[type=time],input[type=url],input[type=week],textarea {
+input[type=color],/*input[type=date],*/input[type=datetime-local],input[type=datetime],input[type=email],input[type=month],input[type=number],input[type=password],input[type=search],input[type=tel],input[type=text],input[type=time],input[type=url],input[type=week],textarea {
     line-height: 24px;
     width: 100%;
     height: 40px;
@@ -2325,6 +2327,19 @@ input[type=color],input[type=date],input[type=datetime-local],input[type=datetim
     outline: 0;
     background-color: #fff;
     -webkit-appearance: none
+}
+
+.kit-item-people {
+    margin: 10px;
+}
+
+input[type="date"] {
+    width: 100%;
+    height: 34px;
+    float: initial;
+    border-radius: 5px;
+    padding-left: 32px;
+    border-bottom: 1px solid #c8c7cc;
 }
 
 input[type=number]::-webkit-inner-spin-button,input[type=number]::-webkit-outer-spin-button {
@@ -2362,7 +2377,8 @@ select {
     height: 32px;
     float: left;
     margin-right: 10px;
-    width: 30%;
+    width: 45%;
+    margin-top: 5px;
 }
 
 select:focus {
@@ -4517,9 +4533,20 @@ a.mui-icon.mui-icon-phone.mui-pull-right {
 
 i.fdj.iconfont.mui-icon.mui-icon-search {
     color: #979797;
-    font-size: 24px;
+    font-size: 28px;
     float: left;
-    margin-top: -24px;
+    padding-top: 4px;
+    position: absolute;
+}
+
+.kit-item-people i.fdj.iconfont.mui-icon.mui-icon-search{
+    padding-left: 7px;
+}
+.centerflex i.fdj.iconfont.mui-icon.mui-icon-search {
+    color: #979797;
+    font-size: 28px;
+    float: left;
+    margin-top: -10px;
 }
 
 i.fdj.iconfont.mui-icon.mui-icon-search:active {
@@ -4528,7 +4555,7 @@ i.fdj.iconfont.mui-icon.mui-icon-search:active {
 
 input.sch-txt {
     width: 100%;
-    padding: 0 10px;
+    padding: 0 32px;
     border: none;
     height: 34px;
     font-size: 16px;
